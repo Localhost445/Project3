@@ -17,7 +17,7 @@ namespace updateAcctInfoService
     public interface updateAcctInfoService1
     {
         [OperationContract]
-        [WebGet(UriTemplate = "/returnCountString?value={input}")] // define user input
-        string changeAcctInfo(string value);
+        [WebGet(UriTemplate = "/changeAccountInfo?acctIDin={acctIDin}")] // define user input format
+        string changeAcctInfo(string acctIDin);
     }
 }

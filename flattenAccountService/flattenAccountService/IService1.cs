@@ -17,7 +17,7 @@ namespace flattenAccountService
     public interface flattenAcctService1
     {
         [OperationContract]
-        [WebGet(UriTemplate = "/returnCountString?value={input}")]        // define input format
-        string flattenAcct(int value);
+        [WebGet(UriTemplate = "/flattenAccount?acctIDin={acctIDin}")]        // define input format
+        string flattenAcct(string acctIDin);
     }
 }
