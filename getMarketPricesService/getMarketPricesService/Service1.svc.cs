@@ -1,6 +1,6 @@
 ﻿// Team: Localhost:3000
 // Implemented by: Alexander Schultz
-// Functionality: trade stocks given symbol and desired share count
+// Functionality :return the price of a specific market
 // Date of completion: TO BE COMPLETED
 
 using System;
@@ -11,13 +11,13 @@ using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
 
-namespace tradeStockService
+namespace getMarketPricesService
 {
-    public class Service1 : tradeStockService1
+    public class Service1 : getMarketPricesService1
     {
-        public string tradeStock(string symbol, int count)
+        public string getMarketPrice(string markSymbol)
         {
-            return "fillertrade";
+            return "fillerMarketPrice";
         }
     }
 }

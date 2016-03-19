@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("tradeStockService")]
+[assembly: AssemblyTitle("getMarketPricesService")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("tradeStockService")]
+[assembly: AssemblyProduct("getMarketPricesService")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("09713e7c-9c76-42a0-b2f2-6684af2e294e")]
+[assembly: Guid("a8b6023e-9ba5-40c4-95b6-13f18aad1a2b")]
 
 // Version information for an assembly consists of the following four values:
 //
