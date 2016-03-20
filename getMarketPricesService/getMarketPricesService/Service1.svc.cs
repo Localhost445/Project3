@@ -17,6 +17,18 @@ namespace getMarketPricesService
     {
         public string getMarketPrice(string markSymbol)
         {
+            if (markSymbol.Equals("DJIA", StringComparison.InvariantCultureIgnoreCase))
+            {
+
+            }
+            if (markSymbol.Equals("NASDAQ", StringComparison.InvariantCultureIgnoreCase))
+            {
+
+            }
+            if (markSymbol.Equals("SPX", StringComparison.InvariantCultureIgnoreCase))
+            {
+
+            }
             return "fillerMarketPrice";
         }
     }
