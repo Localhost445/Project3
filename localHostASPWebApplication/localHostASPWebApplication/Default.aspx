@@ -2,41 +2,88 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div class="jumbotron">
-        <h1>ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-    </div>
-
     <div class="row">
-        <div class="col-md-4">
-            <h2>Getting started</h2>
+        
+            <h2>Update Account Info</h2>
             <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
+                Change Account ID from default &quot;000-0000-000&quot; to user-desired ID. Checks to make sure user input is in a valid format.</p>
+            <p>
+                New Account ID (&quot;XXX-XXXX-XXX&quot;):
+                <asp:TextBox ID="updateAcctTextBox" runat="server" Width="273px"></asp:TextBox>
             </p>
             <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
+                
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit ID" />
+                <p> New Account ID: 
+                <asp:Label ID="newAcctLabel" runat="server"></asp:Label>
+                
             </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
+                                
+            </p>
+
+
+            <h2>Flatten Account</h2>
             <p>
-                NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
+                Ask user for Account ID as a validation step.If valid Account ID is received, reset accountID and display message that account has been deactivated.</p>
+            <p>
+                Account ID to be deactivated (&quot;XXX-XXXX-XXX&quot;):<asp:TextBox ID="flattenTextBox" runat="server" Width="199px"></asp:TextBox>
             </p>
             <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Web Hosting</h2>
-            <p>
-                You can easily find a web hosting company that offers the right mix of features and price for your applications.
+                
+                <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Submit" />
+                
             </p>
             <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
+                
+                Output:
+                <asp:Label ID="flattenLabel" runat="server"></asp:Label>
+                
             </p>
-        </div>
+
+
+            <h2>Calculate Predicted Value of a Stock</h2>
+            <p>
+                Generate the total value of a specific holding based on a valid stock symbol and count of shares. Uses ASU getStockQuote to return the specific stock&#39;s current price.
+            </p>
+            <p>
+                Stock Symbol:
+                <asp:TextBox ID="calcSymbolBox" runat="server"></asp:TextBox>
+            </p>
+            <p>
+                Shares:
+                <asp:TextBox ID="calcShareBox" runat="server"></asp:TextBox>
+            </p>
+            <p>
+                
+                <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Get Value" />
+                
+            </p>
+            <p>
+                
+                Holding value:
+                <asp:Label ID="calcStockLabel" runat="server"></asp:Label>
+                
+            </p>
+        
+            <h2>Get Market Prices</h2>
+            <p>
+               Given a valid stock market symbol (DJIA, NASDAQ, or SPX), return the current price whether market is closed or open.
+            </p>
+            <p>
+                
+                Market Symbol:
+                <asp:TextBox ID="marketTextBox" runat="server"></asp:TextBox>
+            </p>
+            <p>
+                
+                <asp:Button ID="Button4" runat="server" OnClick="Button4_Click1" Text="Button" />
+            </p>
+            <p>
+                
+                Current Market Price:
+                <asp:Label ID="marketPriceLabel" runat="server"></asp:Label>
+            </p>
+
     </div>
 
 </asp:Content>

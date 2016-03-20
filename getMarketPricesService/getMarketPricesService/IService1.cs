@@ -1,7 +1,7 @@
 ﻿// Team: Localhost:3000
 // Implemented by: Alexander Schultz
 // Functionality :return the price of a specific market
-// Date of completion: TO BE COMPLETED
+// Date of completion: 3/19/2016
 
 using System;
 using System.Collections.Generic;
